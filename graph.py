@@ -22,7 +22,7 @@ drugs = graph.nodes.match("Medicine")
 # 获取药品节点的'label'属性
 drug_labels = [drug['label'] for drug in drugs]
 # 保存为csv文件
-np.savetxt('drug_index.csv', drug_labels, fmt='%s', delimiter=',')
+np.savetxt('drug_list.csv', drug_labels, fmt='%s', delimiter=',')
 
 # # 获取所有病人的'出院诊断'属性
 # diagnoses = [patient['出院诊断'] for patient in patients]
